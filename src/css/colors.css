@@ -1,0 +1,43 @@
+/* CSS - Cascading Style Sheet */
+/* Palette color codes */
+/* Palette URL: http://paletton.com/#uid=1000u0kw0ldnYsZtppzEEgQOqbn */
+/* As hex codes */
+
+.color-primary-0 { color: #A90000 }	/* Main Primary color */
+.color-primary-1 { color: #E73A3A }
+.color-primary-2 { color: #CC1111 }
+.color-primary-3 { color: #860000 }
+.color-primary-4 { color: #5B0000 }
+
+/* As RGBa codes */
+.rgba-primary-0 { color: rgba(169,  0,  0,1) }	/* Main Primary color */
+.rgba-primary-1 { color: rgba(231, 58, 58,1) }
+.rgba-primary-2 { color: rgba(204, 17, 17,1) }
+.rgba-primary-3 { color: rgba(134,  0,  0,1) }
+.rgba-primary-4 { color: rgba( 91,  0,  0,1) }
+
+
+/* text */
+.text-primary { color: #333 }
+
+
+/** bg **/
+.bg-secondary {
+    background-color: #f2f2f2;
+}
+
+a {
+    color: #A90000;
+}
+
+a:visited {
+    color: #5B0000
+}
+
+a:hover {
+    color: #5B0000
+}
+
+body {
+    color: #5f5f5f;
+}

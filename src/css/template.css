@@ -1,0 +1,359 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    cursor: pointer;
+}
+
+
+/** COMMON **/
+.ct-section {
+    padding-top: 45px;
+}
+
+.round-profile-pic {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+blockquote {
+    display: block;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -moz-margin-start: 0;
+    margin-start: 0;
+    -webkit-margin-end: 0;
+    -moz-margin-end: 0;
+    margin-end: 0;
+    margin:0;
+    font-style: italic;
+}
+
+blockquote::before {
+    content: open-quote;
+}
+
+blockquote::after {
+    content: close-quote;
+}
+
+.vh-align-outer {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.vh-align-middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.vh-align-inner {
+    text-align: center;
+}
+
+.desktop-only {
+    display: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.read-more {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #860000;
+    color: #fff;
+    font-size: 0.8em;
+}
+.button a,
+.button a:hover,
+.button a:active,
+.button a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #5B0000;
+}
+
+
+#main-view {
+    width: 100%;
+}
+
+
+/******************************************************************************
+ * HEADER and NAV
+ */
+#main-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid #ececec;
+    background-color: #fff;
+    z-index: 40;
+}
+
+#main-header .inner {
+    width: 98%;
+    margin: 0 auto;
+}
+
+#main-header .brand *{
+    display: block;
+    float: left;
+}
+
+#main-header .brand .brand-text {
+    margin-left: 5px;
+    display: none;
+}
+
+#main-header .langs {
+    float: right;
+    display: none;
+}
+
+#main-header .langs .flag{
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-right: 2px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+#main-header .langs .flag.active{
+    opacity: 1;
+}
+
+#main-header .menu-bars {
+    display: block;
+    float: right;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-size: 12pt;
+    margin-right: 10px;
+}
+
+#main-header .collapsible-dropdown-menu {
+    position: absolute;
+    left: 0;
+    text-align: right;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #ececec;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+}
+
+#main-header .collapsible-dropdown-menu a {
+    display: block;
+    padding-right: 2%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #333;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    cursor: pointer;
+}
+
+#main-header .collapsible-dropdown-menu a:hover {
+    text-decoration: none;
+    background-color: rgb(242, 242, 242);
+    border-bottom: 1px solid #ececec;
+    border-top: 1px solid #ececec;
+}
+
+/** Sizes **/
+#main-header,
+#main-header .brand .logo,
+#main-header .brand .brand-text {
+    height: 45px;
+}
+#main-header .brand .brand-text {
+    line-height: 45px;
+}
+#main-header .collapsible-dropdown-menu {
+    top: 45px;
+}
+
+/******************************************************************************
+ * SECTION 1 - Video (now is a static image)
+ */
+#video-section {
+    position: relative;
+    width: 100%;
+    background-image: url("../media/section1.bg.jpg");
+    z-index: 50;
+
+    font-weight: 300;
+    text-align: center;
+}
+
+.logo {
+    display: block;
+}
+
+.page-title {
+    text-transform: uppercase;
+    font-size: 25px;
+    height: 40px;
+}
+
+.page-subtitle {
+    font-size: 16px;
+    line-height: 1.75em;
+}
+
+/******************************************************************************
+ * SECTION 3 - william quote
+ */
+#william-quote {
+    text-align: center;
+    padding: 50px 5% 15px;
+    font-size: 20px !important;
+    color: #5f5f5f;
+}
+
+/******************************************************************************
+ * SECTION 3 - price-golden-visa
+ */
+#price-golden-visa {
+    width: 100%;
+}
+
+#price-golden-visa img {
+    width: 100%;
+}
+
+/******************************************************************************
+ * SECTION price-golden-visa2 DESKTOP ONLY
+ */
+
+#price-golden-visa2 {
+    font-size: 1.5em;
+}
+
+
+/******************************************************************************
+ * SECTION Packages
+ */
+
+#packages {
+    padding-bottom: 50px;
+}
+
+#packages .package {
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50%;
+    text-shadow: 1px 1px 3px rgba(10, 10, 10, 1);
+    color: #fff;
+    text-align: center;
+    border: 1px solid #fff;
+    height: 100%;
+}
+
+#packages .package .pk-text {
+    font-size: 1.2em;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 0;
+    top: 0;
+    margin-right: 1%;
+    border: 0;
+}
+
+#package-lifestyle{background-image:url('../media/lifestyle-pkg.jpg');}
+#package-rentability{background-image:url('../media/rentability-pkg.jpg');}
+#package-education{background-image:url('../media/education-pkg.jpg');}
+#package-emigration{background-image:url('../media/emigration-pkg.jpg');}
+
+/******************************************************************************
+ * SECTION What's included
+ */
+
+#advert3 {
+    padding-bottom: 100px;
+}
+
+#advert3 .item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/******************************************************************************
+ * SECTION About Us
+ */
+#about-us {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-size: 16px !important;
+}
+
+#about-us .profile {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#about-us .profile .name {
+    font-size: 1.5em;
+    padding-top: 10px;
+    color: #860000;
+}
+
+#about-us .profile .job {
+    padding-top: 5px;
+    font-style: italic;
+}
+
+#about-us .button {
+    text-align: center;
+}
+
+/******************************************************************************
+ * SECTION Partnerships
+ */
+
+#partnerships {
+    padding-bottom: 100px;
+}
+
+#partnerships .partner {
+    padding-top: 50px;
+}
+
+
+
+footer {
+    padding-bottom: 20px;
+    border-top: 1px solid #ececec;
+}
+
+footer .contact-us,
+footer .contact-us h2,
+footer .social-media,
+footer .copyright,
+footer .copyright h2 {
+    text-align: center;
+}
+

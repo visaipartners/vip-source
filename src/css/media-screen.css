@@ -1,0 +1,104 @@
+
+/** show brand name on screens bigger than 600px **/
+@media screen and (min-width: 600px) {
+    #main-header .brand .brand-text {
+        display: block;
+    }
+}
+
+/** hide menu bars on screens  bigger than 800px **/
+@media screen and (min-width: 800px) {
+    #main-header .langs {
+        display: block;
+    }
+    #main-header .menu-bars,
+    #main-header .collapsible-dropdown-menu{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .mobile-only {
+        display: none;
+    }
+
+    .desktop-only {
+        display: block;
+    }
+
+    #william-quote {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+    #william-quote img {
+        width: 200px;
+    }
+    #william-quote blockquote{
+        padding-top: 40px;
+        font-size: 1.5em;
+    }
+
+    #price-golden-visa2 {
+        background: url('../media/suit.jpg') no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    #packages .package {
+        padding-bottom: 30%;
+    }
+    .ct-section {
+        padding-top: 90px;
+    }
+    #main-header,
+    #main-header .brand .logo,
+    #main-header .brand .brand-text {
+        height: 90px;
+    }
+    #main-header .brand .brand-text {
+        line-height: 90px;
+    }
+    #main-header .collapsible-dropdown-menu {
+        top: 90px;
+    }
+    #main-header .langs .flag{
+        margin-top: 29px;
+        margin-bottom: 29px;
+        margin-right: 2px;
+    }
+
+    footer {
+        padding-bottom: 100px;
+    }
+
+    footer .contact-us,
+    footer .contact-us h2 {
+        text-align: left;
+    }
+
+    footer .social-media {
+        text-align: center;
+    }
+
+    footer .copyright,
+    footer .copyright h2 {
+        text-align: right;
+    }
+}

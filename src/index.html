@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Visa International Partners</title>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+  <!-- build:js js/vunit.js -->
+  <script src="../bower_components/vunit/vunit.js"></script>
+  <script src="js/vunit-init.js"></script>
+  <!-- endbuild -->
+
+  <!-- fonts -->
+  <link rel="stylesheet" id="fonts-css"
+        href="http://fonts.googleapis.com/css?family=Open+Sans%3A400italic%2C400%2C300%2C600%7CShadows+Into+Light+Two&amp;ver=4.2.4"
+        type="text/css" media="all">
+
+  <!-- build:css css/style.css -->
+  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css"/>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/flags.css"/>
+  <link rel="stylesheet" href="css/typography.css"/>
+  <link rel="stylesheet" href="css/template.css"/>
+  <link rel="stylesheet" href="css/colors.css"/>
+  <link rel="stylesheet" href="css/portfolio.css"/>
+  <link rel="stylesheet" href="css/media-screen.css"/>
+  <!-- endbuild -->
+
+  <script src="js/translations.js"></script>
+
+  <!-- build:js js/vendor.js -->
+  <script src="js/modernizr.js"></script>
+  <script src="../bower_components/angular/angular.js"></script>
+  <script src="../bower_components/angular-cookies/angular-cookies.js"></script>
+  <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:remove --><script src="../node_modules/js-yaml/dist/js-yaml.js"></script><!-- endbuild -->
+
+</head>
+<body data-ng-app="vip" data-ng-controller="MainCtrl">
+<header id="main-header">
+  <div class="inner">
+    <div class="brand">
+      <img class="logo" src="media/logo.svg" onerror="this.src='media/logo.png'">
+
+      <div class="brand-text">Visa International Partners</div>
+    </div>
+    <div class="langs">
+      <a ng-repeat="lang in langs" ng-click="loadTranslation(lang.abr)">
+        <img class="flag flag-{{lang.abr}}" ng-class="{active: lang.active}" alt="{{lang.ext}}" src="media/blank.gif">
+      </a>
+    </div>
+    <div class="menu-bars">
+      <a ng-click="showMenu = !showMenu"><i class="fa fa-bars fa-2x"></i></a>
+    </div>
+    <div class="collapsible-dropdown-menu" ng-show="showMenu">
+      <a ng-repeat="lang in langs" ng-click="loadTranslation(lang.abr)">{{lang.ext}}</a>
+    </div>
+  </div>
+  <div style="clear: both"></div>
+</header>
+
+<div id="main-view" ui-view>
+</div>
+
+<footer class="bg-secondary" id="contact-us">
+  <div class="container">
+    <h1 class="color-primary-0">{{t('Want more information?')}}</h1>
+
+    <div class="row">
+      <div class="contact-us col-xs-12 col-sm-4">
+        <h2>{{t('Contact us')}}</h2>
+        <a href="mailto:info@visaipartners.pt">info@visaipartners.pt</a><br>
+        WeChat ID: <a href="weixin://contacts/profile/Visaipartners">Visaipartners</a><br>
+        +351 218 008 133<br>
+        +351 920 101 866<br>
+      </div>
+      <div class="social-media col-xs-12 col-sm-4">
+        <h2>{{t('Social media')}}</h2>
+        <a href="" title="twitter"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
+        <a href="" title="facebook"><i class="fa fa-facebook fa-fw fa-2x"></i></a>
+        <a href="" title="weibo"><i class="fa fa-weibo fa-fw fa-2x"></i></a>
+        <a href="" title="renren"><i class="fa fa-renren fa-fw fa-2x"></i></a>
+        <a href="" title="kaixin001"><i class="fa fa-star fa-fw fa-2x"></i></a>
+        <a href="" title="youku"><i class="fa fa-youtube-play fa-fw fa-2x"></i></a>
+      </div>
+      <div class="copyright col-xs-12 col-sm-4">
+        <h2>{{t('Copyright')}}</h2>
+
+        <div>Visa Internation Partners &copy; 2015</div>
+        <div>{{t('Design by')}} <a href="http://github.com/tivie/">Estevão Soares dos Santos</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- build:js js/app.js -->
+<script src="js/app.js"></script>
+<!-- endbuild -->
+
+</body>
+</html>

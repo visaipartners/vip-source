@@ -1,0 +1,17 @@
+{
+  "name": "VIP2",
+  "version": "0.0.1",
+  "authors": [
+    "Estevão Soares dos Santos <estevao.santos@gmail.com>"
+  ],
+  "description": "VIP website",
+  "main": "index.html",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.4.4",
+    "font-awesome": "~4.4.0",
+    "angular-cookies": "~1.4.4",
+    "angular-ui-router": "~0.2.15",
+    "vunit": "~0.1.0"
+  }
+}
