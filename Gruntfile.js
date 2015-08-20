@@ -80,6 +80,11 @@ module.exports = function (grunt) {
       }
     }
 
+    ,'yaml-validate': {
+      options: {
+        glob: 'src/translation/*.yml'
+      }
+    }
   });
 
   require('load-grunt-tasks')(grunt);
@@ -102,6 +107,8 @@ module.exports = function (grunt) {
     grunt.file.write(dest + '/js/translations.js', json);
   });
 
+  grunt.registerTask('test', ['yaml-validate']);
+
   grunt.registerTask('build', [
     'clean:public',
     'copy:html',
@@ -120,4 +127,5 @@ module.exports = function (grunt) {
 
   // Default task(s).
   grunt.registerTask('default', ['build']);
+
 };
