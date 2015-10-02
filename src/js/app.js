@@ -116,3 +116,16 @@ vip.controller('MainCtrl', ['$scope', 'translations', '$cookies', '$location', '
     }
   };
 }]);
+
+vip.controller('PortfolioCtrl', ['$scope', '$http', '$sce', function($scope, $http, $sce) {
+  $scope.trustAsHtml = $sce.trustAsHtml;
+  $scope.tiles = [];
+  $http.get('data/portfolio.json').then(
+    function(success) {
+      $scope.tiles = success.data;
+    },
+    function(error) {
+      console.log(error);
+    }
+  );
+}]);

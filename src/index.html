@@ -48,9 +48,10 @@
 <header id="main-header">
   <div class="inner">
     <div class="brand">
-      <img class="logo" src="media/logo.svg" onerror="this.src='media/logo.png'">
-
+      <a href="#/home">
+      <img class="logo" src="media/logo.mini.png">
       <div class="brand-text">Visa International Partners</div>
+      </a>
     </div>
     <div class="langs">
       <a ng-repeat="lang in langs" ng-click="loadTranslation(lang.abr)">
@@ -79,17 +80,18 @@
         <h2>{{t('Contact us')}}</h2>
         <a href="mailto:info@visaipartners.pt">info@visaipartners.pt</a><br>
         WeChat ID: <a href="weixin://contacts/profile/Visaipartners">Visaipartners</a><br>
-        +351 218 008 133<br>
-        +351 920 101 866<br>
+        Main Office: +351 218 008 133 | +351 920 101 866<br>
+        Chinese office: +351 913 638 497<br>
+        English office: +351 918 888 865<br>
+        Spanish office: +351 913 374 337<br>
+        Portuguese office: +351 913 374 337<br>
       </div>
       <div class="social-media col-xs-12 col-sm-4">
         <h2>{{t('Social media')}}</h2>
-        <a href="" title="twitter"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
-        <a href="" title="facebook"><i class="fa fa-facebook fa-fw fa-2x"></i></a>
-        <a href="" title="weibo"><i class="fa fa-weibo fa-fw fa-2x"></i></a>
-        <a href="" title="renren"><i class="fa fa-renren fa-fw fa-2x"></i></a>
-        <a href="" title="kaixin001"><i class="fa fa-star fa-fw fa-2x"></i></a>
-        <a href="" title="youku"><i class="fa fa-youtube-play fa-fw fa-2x"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100009396504559" title="facebook"><i class="fa fa-facebook fa-fw fa-2x"></i></a>
+        <a href="http://www.weibo.com/5675716999/profile?topnav=1&wvr=6" title="weibo"><i class="fa fa-weibo fa-fw fa-2x"></i></a>
+        <a href="http://www.kaixin001.com/home/?_profileuid=169553699&t=68" title="kaixin001"><i class="fa fa-star fa-fw fa-2x"></i></a>
+        <a href="http://i.youku.com/visaipartners" title="youku"><i class="fa fa-youtube-play fa-fw fa-2x"></i></a>
       </div>
       <div class="copyright col-xs-12 col-sm-4">
         <h2>{{t('Copyright')}}</h2>

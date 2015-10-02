@@ -13,7 +13,8 @@ module.exports = function (grunt) {
     copy: {
       html: {
         files: [
-          {src: siteSrc + '/index.html', dest: dest + '/index.html'}
+          {src: siteSrc + '/index.html', dest: dest + '/index.html'},
+          {src: siteSrc + '/CNAME', dest: dest + '/CNAME'}
         ]
       }
       ,assets: {

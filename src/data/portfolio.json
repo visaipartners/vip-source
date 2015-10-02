@@ -1,0 +1,228 @@
+[
+  [
+    {
+      "id":1,
+      "text":"Liberty Avenue, Lisbon<br>Hotel Apartments T0 and T1<br>4% yield"
+    },
+    {
+      "id":2,
+      "text":"Cascais Bay,<br>Commercial space rented<br>9% yield"
+    },
+    {
+      "id":3,
+      "text":"Golf Resort, Lisbon<br>T1 to T5 Apartments"
+    }
+  ],
+  [
+    {
+      "id":4,
+      "text":"Expo Area, Lisbon<br>Commercial Space, Rented<br>8% yield"
+    },
+    {
+      "id":5,
+      "text":"Expo Area, Lisbon<br>T2 Apartment<br>Closed condominium with pool"
+    }
+  ],
+  [
+    {
+      "id":6,
+      "text":"Expo Area, Lisbon<br>T3 Penthouse facing the marina<br>with river view and private pool"
+    },
+    {
+      "id":7,
+      "text":"Liberty Avenue, Lisbon<br>Commercial Space in Shopping Mall<br>10% yield"
+    },
+    {
+      "id":8,
+      "text":"Benfica, Lisbon<br>T2 Apartment, near Colombo shopping center<br>and football stadium"
+    }
+  ],
+  [
+    {
+      "id":9,
+      "text":"University Area, Lisbon<br>T1 and T3 Apartments<br>24h security<br>condominium pool"
+    },
+    {
+      "id":10,
+      "text":"Business Area, Lisbon<br>T2 apartment"
+    }
+  ],
+  [
+    {
+      "id":11,
+      "text":"Residential Area, Lisbon Outskirts<br>T2 to T4 Apartments, 300sqm totally equipped<br>with big terraces or balconies"
+    },
+    {
+      "id":12,
+      "text":"Cascais Center<br>T4 villa with garden and swimming pool<br>proximity to international schools"
+    },
+    {
+      "id":13,
+      "text":"University Area, Lisbon<br>T4 Apartment<br>24h security<br>condominium pool"
+    }
+  ],
+  [
+    {
+      "id":14,
+      "text":"Zoo, Lisbon<br>Commercial Space in prime location<br>5% yield"
+    },
+    {
+      "id":15,
+      "text":"Residential Area, Lisbon Outskirts<br>T3 Apartment, 250sqm totally equipped<br>with big balcony"
+    }
+  ],
+  [
+    {
+      "id":16,
+      "text":"Business Area, Lisbon<br>T1 and T2 Apartments in prime location"
+    },
+    {
+      "id":17,
+      "text":"Expo Area, Lisbon<br>Commercial Space rented<br>6% yield"
+    },
+    {
+      "id":18,
+      "text":"English School, Cascais<br>Brand new detached villa, with4 bedrooms<br>Garden and Sea View"
+    }
+  ],
+  [
+    {
+      "id":19,
+      "text":"Liberty Avenue, Lisboa<br>Hotel Apartment T2<br>4% yield"
+    },
+    {
+      "id":20,
+      "text":"Casino Estoril, Cascais<br>Penthouse T4 with terrace<br>Sea view and jacuzzi"
+    }
+  ],
+  [
+    {
+      "id":21,
+      "text":"French School, Lisbon<br>T3 Apartment, completely furnished and decorated"
+    },
+    {
+      "id":22,
+      "text":"Benfica, Lisbon<br>Commercial Space in one of the busiest areas of the capital, rented<br>with 7% yield"
+    },
+    {
+      "id":23,
+      "text":"Historical Center, Lisbon<br>brand new T2 apartment<br>easy to rent for touristic purposes"
+    }
+  ],
+  [
+    {
+      "id":24,
+      "text":"Expo Area, Lisbon<br>T3 Apartment close to Lisbon's marina and casino"
+    },
+    {
+      "id":25,
+      "text":"Expo Area, Lisbon<br>T2 apartment in iconic building<br>near casino and Shopping center"
+    }
+  ],
+  [
+    {
+      "id":26,
+      "text":"English School, Cascais<br>Brand new detached villa with 3 bedrooms"
+    },
+    {
+      "id":27,
+      "text":"Benfica, Lisbon<br>Commercial space, rented<br>8% yield"
+    },
+    {
+      "id":28,
+      "text":"Expo Area, Lisbon<br>T3 Penthouse facing the marina<br>with river view and private pool"
+    }
+  ],
+  [
+    {
+      "id":29,
+      "text":"English School, Cascais<br>Brand new detached villa with 3 bedrooms"
+    },
+    {
+      "id":30,
+      "text":"Expo Area, Lisbon<br>T2 duplex in iconic building facing the river<br>near casino and Shopping center"
+    }
+  ],
+  [
+    {
+      "id":31,
+      "text":"Alvalade, Lisbon<br>T3 apartment near a football stadium"
+    },
+    {
+      "id":32,
+      "text":"Marques de Pombal, Lisbon<br>commercial space rented<br>8%yield"
+    },
+    {
+      "id":33,
+      "text":"Casino Estoril, Cascais<br>T3 apartment in closed condominium<br>with sea view and swimming pool"
+    }
+  ],
+  [
+    {
+      "id":34,
+      "text":"Casino Estoril, Cascais<br>T2 apartment in closed condominium<br>with sea view and swimming pool"
+    },
+    {
+      "id":35,
+      "text":"Zoo, Lisbon<br>Commercial Space, rented<br>9% yield"
+    }
+  ],
+  [
+    {
+      "id":36,
+      "text":"Expo Area, Lisbon<br>Office space with parking, rented<br>4% yield"
+    },
+    {
+      "id":37,
+      "text":"Expo Area, Lisbon<br>commercial space with parking, rented<br>10% yield"
+    },
+    {
+      "id":38,
+      "text":"Marques de Pombal, Lisbon<br>T2 apartment in Brand new building"
+    }
+  ],
+  [
+    {
+      "id":39,
+      "text":"English School, cascais<br>Brand new detached villa with garden and sea view"
+    },
+    {
+      "id":40,
+      "text":"Expo Area,<br>Commercial Space rented<br>6% yield"
+    }
+  ],
+  [
+    {
+      "id":41,
+      "text":"Cascais Bay,<br>T3 penthouse with beautifull balcony facing the sea"
+    },
+    {
+      "id":42,
+      "text":"Expo Area, Lisbon<br>T4 penthouse with beautiful balcony facing the river"
+    },
+    {
+      "id":43,
+      "text":"Expo Area, Lisbon<br>T3 apartment near the marina"
+    }
+  ],
+  [
+    {
+      "id":44,
+      "text":"Marques de Pombal, Lisbon<br>T3 apartment in Brand new building"
+    },
+    {
+      "id":45,
+      "text":"Guincho, Cascais<br>T2 apartment in Luxury condominium<br>balcony and pool"
+    }
+  ],
+  [
+    {
+      "id":46,
+      "text":"Lisbon center<br>Commercial space rented<br>4% yield"
+    },
+    {
+      "id":47,
+      "text":"Expo Area, Lisbon<br>Office with parking between the marina and the casino"
+    }
+  ]
+]
