@@ -6,7 +6,7 @@
 .portfolio .row>div {
     padding-left:0;
     padding-right:0;
-    border: 1px #ccc solid;
+    /*border: 1px #ccc solid;*/
     position: relative;
     cursor: pointer;
 }
