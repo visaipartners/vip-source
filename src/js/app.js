@@ -87,7 +87,7 @@ vip.controller('MainCtrl', ['$scope', 'translations', '$cookies', '$location', '
   $scope.langs = [
     {abr: 'en', ext: "English", active: false},
     {abr: 'cn', ext: "简体中文", active: false},
-    {abr: 'pt', ext: "Potuguês", active: false},
+    {abr: 'pt', ext: "Português", active: false},
     {abr: 'es', ext: "Castellano", active: false},
     {abr: 'it', ext: "Italiano", active: false}
   ];
