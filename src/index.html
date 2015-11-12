@@ -56,14 +56,15 @@
   </script>
   <!-- end google analytics -->
 
+
 </head>
-<body data-ng-app="vip" data-ng-controller="MainCtrl">
+<body data-ng-app="vip" data-ng-controller="MainCtrl" itemscope itemtype="http://schema.org/Organization">
 <header id="main-header">
   <div class="inner">
-    <div class="brand">
+    <div class="brand" itemprop="brand" itemscope itemtype="http://schema.org/Brand">
       <a href="#/home">
-      <img class="logo" src="media/logo.mini.png">
-      <div class="brand-text">Visa International Partners</div>
+      <img itemprop="logo" class="logo" src="media/logo.mini.png">
+      <div class="brand-text" itemprop="name">Visa International Partners</div>
       </a>
     </div>
     <div class="langs">
@@ -91,20 +92,35 @@
     <div class="row">
       <div class="contact-us col-xs-12 col-sm-4">
         <h2>{{t('Contact us')}}</h2>
-        <a href="mailto:info@visaipartners.pt">info@visaipartners.pt</a><br>
-        WeChat ID: <a href="weixin://contacts/profile/Visaipartners">Visaipartners</a><br>
-        Main Office: +351 218 008 133 | +351 920 101 866<br>
-        Chinese office: +351 913 638 497<br>
-        English office: +351 918 888 865<br>
-        Spanish office: +351 913 374 337<br>
-        Portuguese office: +351 913 374 337<br>
+        <span itemscope itemtype="http://schema.org/ContactPoint">
+          <a href="mailto:info@visaipartners.pt" itemprop="email">info@visaipartners.pt</a>
+        </span><br>
+        <span itemscope itemtype="http://schema.org/ContactPoint">
+          WeChat ID: <a href="weixin://contacts/profile/Visaipartners">Visaipartners</a>
+        </span><br>
+        <span itemscope itemtype="http://schema.org/ContactPoint">
+          Main Office: <span itemprop="telephone">+351 218 008 133</span> | <span itemprop="telephone">+351 920 101 866</span>
+        </span><br>
+        <span itemscope itemtype="http://schema.org/ContactPoint">
+          <span itemprop="availableLanguage">Chinese</span> office: <span itemprop="telephone">+351 913 638 497</span>
+        </span><br>
+        <span itemscope itemtype="http://schema.org/ContactPoint">
+        <span itemprop="availableLanguage">English</span> office: <span itemprop="telephone">+351 918 888 865</span>
+        </span><br>
+        <span itemscope itemtype="http://schema.org/ContactPoint">
+        <span itemprop="availableLanguage">Spanish</span> office: <span itemprop="telephone">+351 913 374 337</span>
+        </span><br>
+        <span itemscope itemtype="http://schema.org/ContactPoint">
+        <span itemprop="availableLanguage">Portuguese</span> office: <span itemprop="telephone">+351 913 374 337</span>
+        </span><br>
       </div>
       <div class="social-media col-xs-12 col-sm-4">
         <h2>{{t('Social media')}}</h2>
-        <a href="https://www.facebook.com/profile.php?id=100009396504559" title="facebook"><i class="fa fa-facebook fa-fw fa-2x"></i></a>
-        <a href="http://www.weibo.com/5675716999/profile?topnav=1&wvr=6" title="weibo"><i class="fa fa-weibo fa-fw fa-2x"></i></a>
-        <a href="http://www.kaixin001.com/home/?_profileuid=169553699&t=68" title="kaixin001"><i class="fa fa-star fa-fw fa-2x"></i></a>
-        <a href="http://i.youku.com/visaipartners" title="youku"><i class="fa fa-youtube-play fa-fw fa-2x"></i></a>
+        <a itemprop="sameAs" href="https://www.facebook.com/profile.php?id=100009396504559" title="facebook"><i class="fa fa-facebook fa-fw fa-2x"></i></a>
+        <a itemprop="sameAs" href="https://twitter.com/visaipartners" title="twitter"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
+        <a itemprop="sameAs" href="http://www.weibo.com/5675716999/profile?topnav=1&wvr=6" title="weibo"><i class="fa fa-weibo fa-fw fa-2x"></i></a>
+        <a itemprop="sameAs" href="http://www.kaixin001.com/home/?_profileuid=169553699&t=68" title="kaixin001"><i class="fa fa-star fa-fw fa-2x"></i></a>
+        <a itemprop="sameAs" href="http://i.youku.com/visaipartners" title="youku"><i class="fa fa-youtube-play fa-fw fa-2x"></i></a>
       </div>
       <div class="copyright col-xs-12 col-sm-4">
         <h2>{{t('Copyright')}}</h2>
