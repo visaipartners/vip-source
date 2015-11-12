@@ -357,3 +357,6 @@ footer .copyright h2 {
     text-align: center;
 }
 
+.pname {
+    font-weight: bold;
+}

@@ -65,14 +65,14 @@
     <h1 class="color-primary-0">{{t('Packages')}}</h1>
     <div class="container">
         <div class="row">
-            <div id="package-lifestyle" class="package col-xs-12 col-md-6">
+            <div id="package-lifestyle" class="package col-xs-12 col-md-6" itemscope itemtype="http://schema.org/Product">
                 <div class="content">
-                    <h2><b>{{t('Lifestyle')}}</b></h2>
+                    <h2 itemprop="name" class="pname">{{t('Lifestyle')}}</h2>
                     <div class="pk-text">
                         <div class="vh-align-outer">
                             <div class="vh-align-middle">
-                                <div class="vh-align-inner">
-                                    <b>{{t('For the luxury products')}}</b><br>
+                                <div class="vh-align-inner" itemprop="description">
+                                    {{t('For the luxury products')}}<br>
                                     {{t('For a 500.000€ or a 750.000€ all inclusive package, have access to the best golf and sea properties in Portugal, Spain or Italy')}}
                                 </div>
                             </div>
@@ -80,41 +80,53 @@
                     </div>
                 </div>
             </div>
-            <div id="package-rentability" class="package col-xs-12 col-md-6">
+            <div id="package-rentability" class="package col-xs-12 col-md-6" itemscope itemtype="http://schema.org/Product">
                 <div class="content">
-                    <h2><b>{{t('Rentability')}}</b></h2>
+                    <h2 itemprop="name" class="pname">{{t('Rentability')}}</h2>
                     <div class="pk-text">
-                        <div class="vh-align-outer"><div class="vh-align-middle"><div class="vh-align-inner">
-                        <b>{{t('Minimum 7% net')}}</b><br>
-                        {{t('Acquire one or more of our rented commercial spaces and maximize your 500.000€ investment Without worring about tennents or expenses')}}.
-                        </div></div></div>
+                        <div class="vh-align-outer">
+                            <div class="vh-align-middle">
+                                <div class="vh-align-inner" itemprop="description">
+                                    {{t('Minimum 7% net')}}<br>
+                                    {{t('Acquire one or more of our rented commercial spaces and maximize your 500.000€ investment Without worring about tennents or expenses')}}.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div id="package-education" class="package col-xs-12 col-md-6">
+            <div id="package-education" class="package col-xs-12 col-md-6" itemscope itemtype="http://schema.org/Product">
                 <div class="content">
-                    <h2><b>{{t('Education')}}</b></h2>
+                    <h2 itemprop="name" class="pname">{{t('Education')}}</h2>
                     <div class="pk-text">
-                        <div class="vh-align-outer"><div class="vh-align-middle"><div class="vh-align-inner">
-                        <b>{{t('To study abroad')}}</b><br>
-                        {{t('Specially designed to facilitate families that come to study abroad')}}.<br>
-                        {{t('With properties near the major Universities or International Schools')}}.
-                        </div></div></div>
+                        <div class="vh-align-outer">
+                            <div class="vh-align-middle">
+                                <div class="vh-align-inner" itemprop="description">
+                                    {{t('To study abroad')}}<br>
+                                    {{t('Specially designed to facilitate families that come to study abroad')}}.<br>
+                                    {{t('With properties near the major Universities or International Schools')}}.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div id="package-emigration" class="package col-xs-12 col-md-6">
+            <div id="package-emigration" class="package col-xs-12 col-md-6" itemscope itemtype="http://schema.org/Product">
                 <div class="content">
-                    <h2><b>{{t('Emigration')}}</b></h2>
+                    <h2 itemprop="name" class="pname">{{t('Emigration')}}</h2>
                     <div class="pk-text">
-                        <div class="vh-align-outer"><div class="vh-align-middle"><div class="vh-align-inner">
-                        <b>{{t('Moving overseas')}}</b><br>
-                        {{t('For those who consider moving overseas')}}.<br>
-                        {{t('For just 500.000€ you can get an apartment and a shop, in a good location, good yield')}}.<br>
-                        {{t('No expenses added')}}.
-                        </div></div></div>
+                        <div class="vh-align-outer">
+                            <div class="vh-align-middle">
+                                <div class="vh-align-inner" itemprop="description">
+                                    {{t('Moving overseas')}}<br>
+                                    {{t('For those who consider moving overseas')}}.<br>
+                                    {{t('For just 500.000€ you can get an apartment and a shop, in a good location, good yield')}}.<br>
+                                    {{t('No expenses added')}}.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
