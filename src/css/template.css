@@ -360,3 +360,7 @@ footer .copyright h2 {
 .pname {
     font-weight: bold;
 }
+
+.hcpoint {
+    display: none;
+}

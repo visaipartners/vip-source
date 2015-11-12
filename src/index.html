@@ -92,27 +92,34 @@
     <div class="row">
       <div class="contact-us col-xs-12 col-sm-4">
         <h2>{{t('Contact us')}}</h2>
-        <span itemscope itemtype="http://schema.org/ContactPoint">
-          <a href="mailto:info@visaipartners.pt" itemprop="email">info@visaipartners.pt</a>
+
+        <a href="mailto:info@visaipartners.pt" itemprop="email">info@visaipartners.pt</a><br>
+
+        WeChat ID: <a href="weixin://contacts/profile/Visaipartners">Visaipartners</a><br>
+
+        <span itemprop="contactPoint" itemscope itemtype="http://schema.org/ContactPoint">
+          Main Office: <span itemprop="telephone">+351 218 008 133</span> | <span class="hcpoint" itemprop="contactType">sales</span>
+        </span>
+
+        <span itemprop="contactPoint" itemscope itemtype="http://schema.org/ContactPoint">
+         <span itemprop="telephone">+351 920 101 866</span><span class="hcpoint" itemprop="contactType">sales</span>
         </span><br>
-        <span itemscope itemtype="http://schema.org/ContactPoint">
-          WeChat ID: <a href="weixin://contacts/profile/Visaipartners">Visaipartners</a>
-        </span><br>
-        <span itemscope itemtype="http://schema.org/ContactPoint">
-          Main Office: <span itemprop="telephone">+351 218 008 133</span> | <span itemprop="telephone">+351 920 101 866</span>
-        </span><br>
-        <span itemscope itemtype="http://schema.org/ContactPoint">
-          <span itemprop="availableLanguage">Chinese</span> office: <span itemprop="telephone">+351 913 638 497</span>
-        </span><br>
-        <span itemscope itemtype="http://schema.org/ContactPoint">
-        <span itemprop="availableLanguage">English</span> office: <span itemprop="telephone">+351 918 888 865</span>
-        </span><br>
-        <span itemscope itemtype="http://schema.org/ContactPoint">
-        <span itemprop="availableLanguage">Spanish</span> office: <span itemprop="telephone">+351 913 374 337</span>
-        </span><br>
-        <span itemscope itemtype="http://schema.org/ContactPoint">
-        <span itemprop="availableLanguage">Portuguese</span> office: <span itemprop="telephone">+351 913 374 337</span>
-        </span><br>
+
+        <span itemprop="contactPoint" itemscope itemtype="http://schema.org/ContactPoint">
+          <span itemprop="availableLanguage">Chinese</span> office: <span itemprop="telephone">+351 913 638 497</span><span class="hcpoint" itemprop="contactType">sales</span><br>
+        </span>
+
+        <span itemprop="contactPoint" itemscope itemtype="http://schema.org/ContactPoint">
+          <span itemprop="availableLanguage">English</span> office: <span itemprop="telephone">+351 918 888 865</span><span class="hcpoint" itemprop="contactType">sales</span><br>
+        </span>
+
+        <span itemprop="contactPoint" itemscope itemtype="http://schema.org/ContactPoint">
+          <span itemprop="availableLanguage">Spanish</span> office: <span itemprop="telephone">+351 913 374 337</span><span class="hcpoint" itemprop="contactType">sales</span><br>
+        </span>
+
+        <span itemprop="contactPoint" itemscope itemtype="http://schema.org/ContactPoint">
+          <span itemprop="availableLanguage">Portuguese</span> office: <span itemprop="telephone">+351 913 374 337</span><span class="hcpoint" itemprop="contactType">sales</span><br>
+        </span>
       </div>
       <div class="social-media col-xs-12 col-sm-4">
         <h2>{{t('Social media')}}</h2>
@@ -124,7 +131,7 @@
       </div>
       <div class="copyright col-xs-12 col-sm-4">
         <h2>{{t('Copyright')}}</h2>
-
+        <div itemprop="url">http://www.visaipartners.pt/</div>
         <div>Visa Internation Partners &copy; 2015</div>
         <div>{{t('Design by')}} <a href="http://github.com/tivie/">Estevão Soares dos Santos</a></div>
       </div>
