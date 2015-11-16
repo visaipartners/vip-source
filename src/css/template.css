@@ -302,6 +302,15 @@ blockquote::after {
 }
 
 /******************************************************************************
+ * Portfolio
+ */
+#portfolio {
+    overflow: hidden;
+}
+
+
+
+/******************************************************************************
  * SECTION About Us
  */
 #about-us {
@@ -363,4 +372,102 @@ footer .copyright h2 {
 
 .hcpoint {
     display: none;
+}
+
+
+
+/** CHAT **/
+
+.chatPopUp,
+.helpChat {
+    display: none;
+}
+
+
+.helpChat {
+    z-index: 1000;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    border: 1px solid #aaa;
+}
+
+.chatTopbar {
+    background-color: #262626;
+    color: white;
+    height: 25px;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.chatTopbar .barText {
+    float: left;
+    padding-left: 10px;
+
+}
+
+.chatTopbar .chatMinimize {
+    float: right;
+    padding-right: 10px;
+}
+
+.chatPopUp {
+    z-index: 1000;
+    background-color: #5B0000;
+    width: 200px;
+    height: 75px;
+    position: fixed;
+    bottom: 40px;
+    right: 75px;
+    border-radius: 22px;
+    color: white;
+    cursor: pointer;
+}
+
+.chatPopUp::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 150px;
+    border-width: 13px 13px 0;
+    border-style: solid;
+    border-color: #5B0000 transparent;
+    display: block;
+    width: 0;
+}
+
+.chatPopUp:hover {
+    background-color: #A90000;
+}
+
+.chatPopUp:hover::after {
+    border-color: #A90000 transparent;
+}
+
+.chatPopUp .popPositioner {
+    /*padding-left: 20px;*/
+    padding-top: 5px;
+}
+
+.chatPopUp .popPositioner>* {
+    display: block;
+    float: left;
+}
+
+.chatPopUp .popPositioner .photo {
+    padding-left: 5px;
+    padding-top: 3px;
+    border-radius: 50%;
+}
+
+.chatPopUp .popPositioner .text {
+    width: 130px;
+    padding-left: 5px;
+    text-align: center;
+}
+
+.chatPopUp .popPositioner .text .subtext {
+    font-size: small;
 }

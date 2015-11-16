@@ -67,6 +67,9 @@ vip.controller('MainCtrl', ['$scope', 'translations', '$cookies', '$location', '
 
   $scope.translation = {};
   $scope.showMenu = false;
+  $scope.chatMinimized = true;
+  $scope.popUpOpen = true;
+
 
   if (!$cookies.get('language')) {
     var lang;
