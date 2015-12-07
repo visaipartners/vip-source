@@ -24,7 +24,7 @@ vip.factory('translations', ['$http', '$q', function($http, $q) {
     cn: {},
     pt: {},
     es: {},
-    it: {}
+    ar: {}
   };
 
   var cLang = 'en';
@@ -83,16 +83,18 @@ vip.controller('MainCtrl', ['$scope', 'translations', '$cookies', '$location', '
       lang = 'en';
     }
     lang = lang.replace(/(.*)-.*/, '$1');
+
     $cookies.put('language', lang);
   }
 
   $scope.lang = $cookies.get('language');
+
   $scope.langs = [
     {abr: 'en', ext: "English", active: false},
     {abr: 'cn', ext: "简体中文", active: false},
     {abr: 'pt', ext: "Português", active: false},
     {abr: 'es', ext: "Castellano", active: false},
-    {abr: 'it', ext: "Italiano", active: false}
+    {abr: 'ar', ext: "Arabic", active: false}
   ];
 
   var loadTranslation = $scope.loadTranslation = function (lang) {
