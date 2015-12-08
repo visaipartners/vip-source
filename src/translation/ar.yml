@@ -73,7 +73,7 @@
 # Packages
 #
 "Packages":
-  Investement(Arab)
+  استثمار
 
 "Lifestyle":
   Lifestyle(Arab)
@@ -127,7 +127,7 @@
 # What's Included section
 #
 "What's included":
-  500.000€ Investment Package(Arab)
+  500 € مجموعة الاستثمار
 
 "Property Acquisition":
   Property Acquisition(Arab)
@@ -161,7 +161,7 @@
 # About us
 #
 "About us":
-  About us(Arab)
+  معلومات عنا
 
 #Long paragraph, so I replaced it with an alias
 "about us long text":
@@ -181,14 +181,14 @@
 # Successful deals
 #
 "Successful deals":
-  Successful deals(Arab)
+  الصفقات الناجحة
 
 
 ########################################################################################################################
 # Partners
 #
 "Our partners":
-  Our partners(Arab)
+  شركاؤنا
 
 
 
