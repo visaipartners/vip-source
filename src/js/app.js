@@ -69,6 +69,7 @@ vip.controller('MainCtrl', ['$scope', 'translations', '$cookies', '$location', '
   $scope.showMenu = false;
   $scope.chatMinimized = true;
   $scope.popUpOpen = true;
+  $scope.langdir = 'auto';
 
 
   if (!$cookies.get('language')) {
@@ -88,6 +89,12 @@ vip.controller('MainCtrl', ['$scope', 'translations', '$cookies', '$location', '
   }
 
   $scope.lang = $cookies.get('language');
+
+  if ($scope.lang === 'ar') {
+    $scope.langdir = 'rtl';
+  } else {
+    $scope.langdir = 'ltr';
+  }
 
   $scope.langs = [
     {abr: 'en', ext: "English", active: false},
@@ -113,7 +120,6 @@ vip.controller('MainCtrl', ['$scope', 'translations', '$cookies', '$location', '
   loadTranslation($scope.lang);
 
   $scope.t = function (idx) {
-    //console.log(idx, $scope.translation.hasOwnProperty(idx));
     if ($scope.translation.hasOwnProperty(idx) && !angular.isUndefined($scope.translation[idx])) {
       return $scope.translation[idx];
     } else {
