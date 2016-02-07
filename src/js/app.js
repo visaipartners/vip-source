@@ -4,7 +4,7 @@
 
 var vip = angular.module('vip', ['ngCookies', 'ui.router']);
 
-vip.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+vip.config(['$stateProvider', '$urlRouterProvider', '$httpProvider', function($stateProvider, $urlRouterProvider, $httpProvider) {
   $urlRouterProvider.otherwise("/home");
 
   $stateProvider
@@ -70,20 +70,6 @@ vip.controller('MainCtrl', ['$scope', 'translations', '$cookies', '$location', '
   $scope.chatMinimized = true;
   $scope.popUpOpen = true;
   $scope.langdir = 'auto';
-  $scope.isOperatorOnline = false;
-
-  $http
-    .get('//chat.visaipartners.pt/index.php/site_admin/restapi/isonline')
-    .then(
-      //Success
-      function (response) {
-        $scope.isOperatorOnline = response.data.isonline;
-      },
-      // Failure
-      function () {
-        $scope.isOperatorOnline = false;
-      }
-    );
 
   if (!$cookies.get('language')) {
     var lang;
@@ -152,4 +138,35 @@ vip.controller('PortfolioCtrl', ['$scope', '$http', '$sce', function($scope, $ht
       console.log(error);
     }
   );
+}]);
+
+// Online status Update
+vip.controller('chatBoxCtrl', ['$scope', '$http', '$interval', function($scope, $http, $interval) {
+  $scope.isOperatorOnline = false;
+
+  var statusPromise = $http.get('//chat.visaipartners.pt/index.php/site_admin/restapi/isonline', {cache: false}),
+      success = function (response) {
+        $scope.isOperatorOnline = response.isonline;
+      },
+      fail = function () {
+        $scope.isOperatorOnline = false;
+      };
+
+  // run once
+  statusPromise
+    .success(success)
+    .error(fail);
+
+  // set long poll
+  var poll = $interval(function() {
+    statusPromise
+      .success(success)
+      .error(fail)
+      .then(
+        function() {
+        },
+        function() {
+          $interval.cancel(poll);
+        });
+  }, 5000);
 }]);

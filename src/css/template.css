@@ -408,8 +408,12 @@ footer .copyright h2 {
 
 }
 
-.chatTopbar .barText span{
+.chatTopbar .barText .online{
     color: greenyellow;
+}
+
+.chatTopbar .barText .offline{
+    color: #860000;
 }
 
 .chatTopbar .chatMinimize {
