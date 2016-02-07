@@ -155,7 +155,7 @@
 
 <div class="helpChat">
   <div class="chatTopbar" data-ng-click="chatMinimized = !chatMinimized; popUpOpen = false">
-    <div class="barText">{{t('Live Help Chat')}}</div>
+    <div class="barText">{{t('Live Help Chat')}}<span ng-show="isOperatorOnline"> - ONLINE</span></div>
     <div class="chatMinimize" >
       <i class="fa fa-caret-down" ng-show="!chatMinimized"></i>
       <i class="fa fa-whatsapp" ng-show="chatMinimized"></i>

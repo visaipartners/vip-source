@@ -408,6 +408,10 @@ footer .copyright h2 {
 
 }
 
+.chatTopbar .barText span{
+    color: greenyellow;
+}
+
 .chatTopbar .chatMinimize {
     float: right;
     padding-right: 10px;

@@ -58,7 +58,7 @@ vip.factory('translations', ['$http', '$q', function($http, $q) {
   };
 }]);
 
-vip.controller('MainCtrl', ['$scope', 'translations', '$cookies', '$location', '$anchorScroll', function($scope, translations, $cookies, $location, $anchorScroll) {
+vip.controller('MainCtrl', ['$scope', 'translations', '$cookies', '$location', '$anchorScroll', '$http', function($scope, translations, $cookies, $location, $anchorScroll, $http) {
 
   $scope.scrollTo = function(id) {
     $location.hash(id);
@@ -70,7 +70,20 @@ vip.controller('MainCtrl', ['$scope', 'translations', '$cookies', '$location', '
   $scope.chatMinimized = true;
   $scope.popUpOpen = true;
   $scope.langdir = 'auto';
+  $scope.isOperatorOnline = false;
 
+  $http
+    .get('//chat.visaipartners.pt/index.php/site_admin/restapi/isonline')
+    .then(
+      //Success
+      function (response) {
+        $scope.isOperatorOnline = response.data.isonline;
+      },
+      // Failure
+      function () {
+        $scope.isOperatorOnline = false;
+      }
+    );
 
   if (!$cookies.get('language')) {
     var lang;
